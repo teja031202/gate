@@ -1,0 +1,25 @@
+<html>
+<html lang="en">
+<head>
+    <title>GATE</title>
+    <link rel="stylesheet" href="gate.css">
+</head>
+<body>
+    <h1>OPEN AND CLOSE THE GATE..!</h1>
+    <div>
+        <img id="image" src="close.jpg" alt="off">
+    </div>
+    <div>
+        <button id="on" onclick="gate_open()">open</button>
+        <button id="off" onclick="gate_close()">close</button>
+    </div>
+    <script>
+        function gate_open(){
+        document.getElementById('image').src="open.jpg";
+    }
+    function gate_close(){
+        document.getElementById('image').src = "close.jpg";
+    }
+    </script>
+</body>
+</html>
